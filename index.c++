@@ -1,6 +1,7 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
-int main() {
-    cout<< "Hello, World!" << endl;
-    return 0;
+
+bool isLeapYear(int year) {
+    return ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
 }
